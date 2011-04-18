@@ -11,6 +11,7 @@
 @implementation DesktopAppServiceAppDelegate
 
 @synthesize window;
+@synthesize serverLog;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

@@ -11,8 +11,10 @@
 @interface DesktopAppServiceAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+    NSTextField *serverLog;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet NSTextField *serverLog;
+    
 @end
