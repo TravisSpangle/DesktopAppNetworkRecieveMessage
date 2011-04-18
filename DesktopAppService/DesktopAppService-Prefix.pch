@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DesktopAppService' target in the 'DesktopAppService' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
