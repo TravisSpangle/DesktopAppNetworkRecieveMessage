@@ -11,7 +11,7 @@
 		53C86377135C071600448CCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C86375135C071600448CCE /* InfoPlist.strings */; };
 		53C8637A135C071600448CCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C86379135C071600448CCE /* main.m */; };
 		53C8637D135C071600448CCE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53C8637B135C071600448CCE /* Credits.rtf */; };
-		53C86380135C071600448CCE /* DesktopAppServiceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8637F135C071600448CCE /* DesktopAppServiceAppDelegate.m */; };
+		53C86380135C071600448CCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C8637F135C071600448CCE /* AppDelegate.m */; };
 		53C86383135C071700448CCE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C86381135C071700448CCE /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +26,8 @@
 		53C86378135C071600448CCE /* DesktopAppService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesktopAppService-Prefix.pch"; sourceTree = "<group>"; };
 		53C86379135C071600448CCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53C8637C135C071600448CCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		53C8637E135C071600448CCE /* DesktopAppServiceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesktopAppServiceAppDelegate.h; sourceTree = "<group>"; };
-		53C8637F135C071600448CCE /* DesktopAppServiceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesktopAppServiceAppDelegate.m; sourceTree = "<group>"; };
+		53C8637E135C071600448CCE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		53C8637F135C071600448CCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53C86382135C071700448CCE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 		53C86372135C071600448CCE /* DesktopAppService */ = {
 			isa = PBXGroup;
 			children = (
-				53C8637E135C071600448CCE /* DesktopAppServiceAppDelegate.h */,
-				53C8637F135C071600448CCE /* DesktopAppServiceAppDelegate.m */,
+				53C8637E135C071600448CCE /* AppDelegate.h */,
+				53C8637F135C071600448CCE /* AppDelegate.m */,
 				53C86381135C071700448CCE /* MainMenu.xib */,
 				53C86373135C071600448CCE /* Supporting Files */,
 			);
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C8637A135C071600448CCE /* main.m in Sources */,
-				53C86380135C071600448CCE /* DesktopAppServiceAppDelegate.m in Sources */,
+				53C86380135C071600448CCE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +281,7 @@
 				53C86388135C071700448CCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
