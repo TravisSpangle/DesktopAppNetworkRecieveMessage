@@ -8,13 +8,20 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class NetworkListener;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
-    NSTextField *serverLog;
+    IBOutlet NSTextField *serverLog;
+    
+    NetworkListener *listener_;
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextField *serverLog;
-    
+@property (nonatomic, retain) IBOutlet NSTextField *serverLog;
+@property (nonatomic, retain) NetworkListener *listener_;
+
+- (void) appendToLog:(NSString *) logLine;
+
 @end

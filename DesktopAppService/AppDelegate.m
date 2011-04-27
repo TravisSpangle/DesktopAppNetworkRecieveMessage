@@ -8,14 +8,37 @@
 
 #import "AppDelegate.h"
 
+#include "NetworkListener.h"
+
 @implementation AppDelegate
 
 @synthesize window;
 @synthesize serverLog;
+@synthesize listener_;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    listener_ = [[NetworkListener alloc] init];
+    [listener_ startService];
+    
+    NSNotificationCenter *notification_ = [NSNotificationCenter defaultCenter];        
+    [notification_ addObserver:self selector:@selector(appendToLog:) name:@"NetworkListenerMessage" object:nil];
 }
+
+
+
+- (void)dealloc
+{
+    [listener_ release];
+    
+    [super dealloc];
+}
+
+- (void) appendToLog:(NSDictionary *) logLine
+{
+    [serverLog setObjectValue:
+        [NSString stringWithFormat:@"%@\n%@", [serverLog stringValue], [[logLine userInfo] objectForKey:@"message"]]];
+}
+
 
 @end
